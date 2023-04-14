@@ -1,6 +1,6 @@
 # SQLCipher Encrypted SQLite Database Exporter
 
-This scripts is inspired by the thread on the apple discussions: [Authenticator plus missing in my region](https://discussions.apple.com/thread/254567411).
+This script is inspired by the thread on the apple discussions: [Authenticator plus missing in my region](https://discussions.apple.com/thread/254567411).
 
 This script exports TOTP entries from an encrypted SQLite database (created by Authenticator Plus or a similar app) to individual OTPAuth URIs and ASCII QR codes.
 
