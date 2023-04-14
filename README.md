@@ -2,11 +2,14 @@
 
 This script exports TOTP entries from an encrypted SQLite database (created by Authenticator Plus or a similar app) to individual OTPAuth URIs and ASCII QR codes.
 
+Authenticator Plus has disappeared from the Mac App Store and you can be left without access to your OTP passwords.
+
 ## Requirements
 
+- You need to remember your original passphrase. This library does not bruteforce the encryption (yet).
 - Python 3.6 or higher
 - The required Python packages listed in `requirements.txt`
-- SQLCipher library
+- SQLCipher library (see below)
 
 ## Installation
 
@@ -21,7 +24,7 @@ pip install -r requirements.txt
 ### Mac M1 Users
 
 1. Install the SQLCipher and SQLite libraries using Homebrew:
-   `brew install sqlcipher sqlite`
+   `brew install sqlcipher`
 
 2. Run the following command to install the required Python packages with the proper paths for SQLCipher:
 `
